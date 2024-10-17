@@ -18,6 +18,12 @@ buttons.forEach((button) => {
     button.classList.add("buttonActive");
     boutonActif = button;
 
+    // Réinitialise aria-pressed pour tous les boutons
+    buttons.forEach((b) => b.setAttribute("aria-pressed", "false"));
+
+    // Active aria-pressed pour le bouton cliqué
+    button.setAttribute("aria-pressed", "true");
+
     rating = button.dataset.rating;
     console.log(`La valeur du bouton est : ${rating}`);
     //Ecriture dans le span du score rating

@@ -153,7 +153,8 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-
+.footer__rating-btn:focus,
+.circle__icon__container:focus,
 .footer__rating-btn:hover {
   background-color: var(--Orange);
   color: var(--Dark-Blue);
@@ -186,6 +187,7 @@ body {
   cursor: pointer;
 }
 
+.footer__submit-btn:focus,
 .footer__submit-btn:active,
 .footer__submit-btn:hover {
   background-color: var(--White);
