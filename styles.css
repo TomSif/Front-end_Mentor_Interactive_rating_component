@@ -5,9 +5,9 @@
   /*# Neutral*/
   --White: hsl(0, 0%, 100%);
   --Light-Grey: hsl(217, 12%, 63%);
-  --Dark-Blue: hsl(213, 19%, 18%);
+  --Dark-Blue: hsl(215, 23%, 15%);
   --Very-Dark-Blue: hsl(216, 12%, 8%);
-  --Dark-grey: hsl(215, 20%, 25%);
+  --Dark-grey: hsl(210, 19%, 18%);
   /* ### Define padding and gap of the project */
   --layout-gap: 1.5rem;
   --layout-padding: 2rem;
@@ -162,7 +162,7 @@ body {
 
 .footer__rating-btn:active {
   background-color: var(--White);
-  color: var(--Dark-Blue);
+  color: var(--Very-Dark-Blue);
   cursor: pointer;
   animation: bounce 0.3s ease;
 }
@@ -197,6 +197,8 @@ body {
 /* Active class to toggle in javascript  */
 .buttonActive {
   background-color: var(--White);
+  color: var(--Very-Dark-Blue);
+  cursor: pointer;
 }
 
 /* Thank U Styling start here  */
@@ -315,5 +317,65 @@ body {
   }
   100% {
     opacity: 0%;
+  }
+}
+
+/* ### MEDIA QUERIES */
+
+@media (min-width: 48rem) {
+  body {
+    height: 100vh;
+  }
+  .article-layout {
+    max-width: 25rem;
+    background-color: var(--Dark-Blue);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  .circle__icon__container {
+    transform: scale(1.2);
+  }
+  .header {
+    margin-bottom: 1rem;
+  }
+  .main {
+    margin-bottom: 0.5rem;
+  }
+  .main__title {
+    font-size: 1.7rem;
+  }
+  .main__description {
+    margin-top: -0.5rem;
+    font-size: 0.92rem;
+  }
+  .footer__rating-list {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    justify-content: space-between;
+  }
+  .footer__submit__container {
+    margin-top: 0.75rem;
+  }
+  .footer__submit-btn {
+    margin-bottom: 0;
+  }
+  .thank-you__icon {
+    transform: scale(1);
+    overflow: visible;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .thank-you__rating-section--title {
+    padding: 0.5rem 1.5rem 0.3rem 1.5rem;
+    font-size: 0.94rem;
+  }
+  .thank-you__text-section__title {
+    margin-top: 0.5rem;
+    font-size: 1.75rem;
+  }
+  .thank-you__text-section__paragraph {
+    line-height: 1.6;
+    margin-top: -0.5rem;
+    font-size: 0.94rem;
   }
 }
